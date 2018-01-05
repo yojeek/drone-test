@@ -1,0 +1,21 @@
+{
+  "name": "avisits-cabinet",
+  "version": "1.0.0",
+  "description": "Private Cabinet for Avisits CRM",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node -r babel-register bin/dev.js",
+    "build": "node -r babel-register bin/build.js",
+    "lint": "eslint bin config src -f table",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtlantisUnited/avisits-cabinet.git"
+  },
+  "author": "Andrew Ghostuhin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtlantisUnited/avisits-cabinet/issues"
+  },
+  "homepage": "https://github.com/AtlantisUnited/avisits-cabinet#readme"
+}

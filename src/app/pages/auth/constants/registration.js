@@ -1,0 +1,5 @@
+export const change = '@@avisits-cabinet/auth/registration/CHANGE'
+export const register = '@@avisits-cabinet/auth/registration/REGISTER'
+export const setErrors = '@@avisits-cabinet/auth/registration/SET_ERRORS'
+export const goToSuccess = '@@avisits-cabinet/auth/registration/GO_TO_SUCCESS'
+export const clear = '@@avisits-cabinet/auth/registration/CLEAR'

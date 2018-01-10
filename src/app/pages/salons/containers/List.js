@@ -18,7 +18,7 @@ class Container extends Component {
 }
 
 export default connect(
-  state => state.salons.list,
+  state => ({ ...state.salons.list, networks: state.networks.list.rows }),
   (dispatch, { history }) => ({
     onLoad: () => dispatch(load()),
     onLoadNetworks: () => dispatch(loadNetworks()),

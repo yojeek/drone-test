@@ -1,2 +1,3 @@
-export const auth = '@@avisits-cabinet/security/AUTH'
-export const logout = '@@avisits-cabinet/security/CLEAR'
+export const auth = '@@avisits/security/AUTH'
+export const logout = '@@avisits/security/LOGOUT'
+export const loadAcl = '@@avisits/security/LOAD_ACL'

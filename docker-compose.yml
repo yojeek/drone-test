@@ -1,0 +1,52 @@
+version: "3"
+
+services:
+  yarn:
+    image: node:9.3.0
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn
+
+  dev:
+    image: node:9.3.0
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn run dev
+    ports:
+      - "3030:3030"
+
+  dev-local:
+    image: node:9.3.0
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn run dev
+    environment:
+      - API_URL=http://localhost:3000/
+    ports:
+      - "3030:3030"
+
+  build:
+    image: node:9.3.0
+    working_dir: /workspace
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn run build
+
+  ui:
+    image: node:9.3.0
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn run ui:server
+    ports:
+      - "3040:3030"
+
+  server:
+    build: ./
+    ports:
+      - "8100:80"

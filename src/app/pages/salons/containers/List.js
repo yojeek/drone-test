@@ -6,6 +6,7 @@ import List from '../components/List'
 
 class Container extends Component {
   state = {
+    // TODO: Считать значение выбранной сети из URL, если есть
     selectedNetwork: '0',
   }
 

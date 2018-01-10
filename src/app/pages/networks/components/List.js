@@ -34,7 +34,7 @@ const List = ({ rows = [] }) => (
                   </Link>
                 </h5>
                 <p>
-                  Салонов: 0
+                  Салонов: {row.salons.length}
                 </p>
               </div>
               <div className="col-sm col-3 m--align-right">

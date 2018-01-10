@@ -14,13 +14,13 @@ class Container extends Component {
     this.props.onLoadNetworks()
   }
 
-  onChangeNetwork = e => {
+  onChangeNetwork = (e) => {
     const selectedNetwork = e.target.value || null
     this.setState(() => ({ selectedNetwork }))
   }
 
   render() {
-    const {selectedNetwork} = this.state
+    const { selectedNetwork } = this.state
     const rowsByNetwork = selectedNetwork === '0'
       ? this.props.rows
       : this.props.rows.filter(salon => salon.network.id === selectedNetwork)
@@ -36,7 +36,10 @@ class Container extends Component {
 }
 
 export default connect(
-  state => ({ ...state.salons.list, networks: state.networks.list.rows }),
+  state => ({
+    ...state.salons.list,
+    networks: state.networks.list.rows,
+  }),
   (dispatch, { history }) => ({
     onLoad: () => dispatch(load()),
     onLoadNetworks: () => dispatch(loadNetworks()),

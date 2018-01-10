@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <title>Auth</title>
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+          WebFont.load({
+            google: {"families":["Roboto:300,400,500,600,700"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+          });
+    </script>
+    <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/demo/default/base/custom.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="assets/demo/default/media/img/logo/favicon.ico" />
+  </head>
+  <body class="m-content--skin-light2">
+    
+    <!-- page -->
+    <div class="m-grid m-grid--hor m-grid--root m-page">
+      <div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor m-login m-login--2 m-login-2--skin-2" style="background-image: url(assets/app/media/img//bg/bg-3.jpg);">
+        <div class="m-grid__item m-grid__item--fluid m-login__wrapper">
+          <div class="m-login__container">
+            <div class="m-login__logo">
+              <a href="#">
+                <img src="assets/app/media/img//logos/logo-1.png">
+              </a>
+            </div>
+            <div class="m-login__signin js-login-signin">
+              <div class="m-login__head">
+                <h3 class="m-login__title">Вход</h3>
+              </div>
+              <div class="m-login__form m-form">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Введите номер телефона или email" name="email" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label class="m-checkbox m-checkbox--brand">
+                    <input type="checkbox">
+                    Запомнить
+                    <span></span>
+                  </label>
+                </div>
+                <div class="m-login__form-action">
+                  <button class="btn btn-primary js-go-networks">Далее</button>
+                </div>
+                <div class="m-login__form-action">
+                  <a href="javascript:;" class="m-link js-go-signup">Регистрация</a>
+                </div>
+              </div>
+            </div>
+            <div class="m-login__networks js-login-networks" style="display: none">
+              <div class="m-login__head">
+                <h3 class="m-login__title">Выбор сети</h3>
+                <div class="m-login__desc">Выберете сеть для входа</div>
+              </div>
+              <div class="m-login__form m-form">
+                <div class="form-group">
+                  <button class="btn btn-primary btn-block js-go-password">Ромашка</button>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary btn-block js-go-password">Ola</button>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary btn-block js-go-password">Сеть 3</button>
+                </div>
+                <div class="m-login__form-action">
+                  <a href="javascript:;" class="m-link js-go-signin">Назад</a>
+                </div>
+              </div>
+            </div>
+            <div class="m-login__password js-login-password" style="display: none">
+              <div class="m-login__head">
+                <h3 class="m-login__title">Пароль</h3>
+                <div class="m-login__desc">Сеть: <a href="javascript:;" class="m-link js-go-networks">Ромашка</a></div>
+              </div>
+              <div class="m-login__form m-form">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Введите пароль" name="password">
+                </div>
+                <div class="form-group text-right">
+                  <a href="javascript:;" class="m-link js-go-forgotten">Забыли пароль?</a>
+                </div>
+                <div class="m-login__form-action">
+                  <button class="btn btn-primary">Войти</button>
+                </div>
+              </div>
+            </div>
+            <div class="m-login__forgotten js-login-forgotten" style="display: none">
+              <div class="m-login__head">
+                <h3 class="m-login__title">Восстановление пароля</h3>
+              </div>
+              <div class="m-login__form m-form">
+                <div class="form-group">
+                  <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" name="send">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">На номер ********85</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" name="send">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">на email w****@gmail.com</span>
+                  </label>
+                </div>
+                <div class="m-login__form-action">
+                  <button class="btn btn-primary ml-auto js-go-set">Выслать код восстаноовления</button>
+                </div>
+                <div class="m-login__form-action">
+                  <a href="javascript:;" class="m-link js-go-password">Назад</a>
+                </div>
+              </div>
+            </div>
+            <div class="m-login__forgotten js-login-set" style="display: none">
+              <div class="m-login__head">
+                <h3 class="m-login__title">Восстановление пароля</h3>
+                <div class="m-login__desc">Код для восстановления пароля выслан по sms</div>
+              </div>
+              <div class="m-login__form m-form">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Введите код" name="password">
+                </div>
+                <div class="form-group">
+                  <label>Новый пароль</label>
+                  <input class="form-control" type="text" placeholder="Введите новый пароль" name="password">
+                </div>
+                <div class="m-login__form-action">
+                  <button class="btn btn-primary ml-auto">Установить новый пароль</button>
+                </div>
+                <div class="m-login__form-action">
+                  <a href="javascript:;" class="m-link">Прислать код еще раз</a>
+                </div>
+              </div>
+            </div>
+            <div class="m-login__signup js-login-signup" style="display: none">
+              <div class="m-login__head">
+                <h3 class="m-login__title">Регистрация</h3>
+                <div class="m-login__desc">Добавление новой компании</div>
+              </div>
+              <div class="m-login__form m-form">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Название компании">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Ваше имя" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Номер телефона">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="email" placeholder="Email адрес" name="email">
+                </div>
+                <div class="m-login__form-action">
+                  <button class="btn btn-primary">Зарегистрироваться</button>
+                </div>
+                <div class="m-login__form-action">
+                  <a href="javascript:;" class="m-link js-go-signin">Назад</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end page -->
+
+    <script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="assets/demo/default/base/scripts.bundle.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function(){
+        var signin = $('.js-login-signin'),
+            networks = $('.js-login-networks'),
+            password = $('.js-login-password'),
+            forgotten = $('.js-login-forgotten'),
+            set = $('.js-login-set'),
+            signup = $('.js-login-signup');
+
+        $('.js-go-signup').on('click', function(e){
+          e.preventDefault();
+          signin.hide();
+          signup.show();
+          signup.addClass('animated flipInX');
+        });
+
+        $('.js-go-signin').on('click', function(e){
+          e.preventDefault();
+          signup.hide();
+          networks.hide();
+          signin.show();
+          signin.addClass('animated flipInX');
+        });
+
+        $('.js-go-networks').on('click', function(e){
+          e.preventDefault();
+          signin.hide();
+          password.hide();
+          networks.show();
+          networks.addClass('animated flipInX');
+        });
+
+        $('.js-go-password').on('click', function(e){
+          e.preventDefault();
+          networks.hide();
+          forgotten.hide();
+          password.show();
+          password.addClass('animated flipInX');
+        });
+
+        $('.js-go-forgotten').on('click', function(e){
+          e.preventDefault();
+          password.hide();
+          forgotten.show();
+          forgotten.addClass('animated flipInX');
+        });
+
+        $('.js-go-set').on('click', function(e){
+          e.preventDefault();
+          forgotten.hide();
+          set.show();
+          set.addClass('animated flipInX');
+        });
+      });
+    </script>
+  </body>
+</html>

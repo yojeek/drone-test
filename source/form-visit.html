@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <title>Форма визита</title>
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {"families":["Roboto:300,400,500,600,700"]},
+        active: function() {
+            sessionStorage.fonts = true;
+        }
+      });
+    </script>
+    <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/demo/default/base/custom.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="assets/demo/default/media/img/logo/favicon.ico" />
+  </head>
+  <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"  >
+    <!-- begin:: Page -->
+    <div class="m-grid m-grid--hor m-grid--root m-page">
+      <!-- BEGIN: Header -->
+      <header class="m-grid__item m-header" data-minimize-offset="200" data-minimize-mobile-offset="200">
+        <div class="m-container m-container--fluid m-container--full-height">
+          <div class="m-stack m-stack--ver m-stack--desktop">
+            <!-- BEGIN: Brand -->
+            <div class="m-stack__item m-brand  m-brand--skin-dark ">
+              <div class="m-stack m-stack--ver m-stack--general">
+                <div class="m-stack__item m-stack__item--middle m-brand__logo">
+                  <a href="index.html" class="m-brand__logo-wrapper m--hidden-tablet-and-mobile">
+                    <img alt="" src="assets/demo/default/media/img/logo/logo_default_dark.png"/>
+                  </a>
+                  <h3 class="m--visible-tablet-and-mobile m--font-white m-0">Форма визита</h3>
+                </div>
+                <div class="m-stack__item m-stack__item--middle m-brand__tools">
+                  <!-- BEGIN: Left Aside Minimize Toggle -->
+                  <a href="javascript:;" id="m_aside_left_minimize_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-desktop-inline-block">
+                    <span></span>
+                  </a>
+                  <!-- END -->
+                  <!-- BEGIN: Responsive Aside Left Menu Toggler -->
+                  <a href="javascript:;" id="m_aside_left_offcanvas_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-tablet-and-mobile-inline-block">
+                    <span></span>
+                  </a>
+                  <!-- END -->
+                </div>
+              </div>
+            </div>
+            <!-- END: Brand -->
+          </div>
+        </div>
+      </header>
+      <!-- END: Header -->    
+      <!-- begin::Body -->
+      <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
+        <!-- BEGIN: Left Aside -->
+        <button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn">
+          <i class="la la-close"></i>
+        </button>
+        <div id="m_aside_left" class="m-grid__item  m-aside-left  m-aside-left--skin-dark ">
+          <!-- BEGIN: Aside Menu -->
+          <div id="m_ver_menu" 
+            class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark " 
+            data-menu-vertical="true"
+             data-menu-scrollable="false" data-menu-dropdown-timeout="500"  
+            >
+            <ul class="m-menu__nav">
+              <li class="m-menu__item">
+                <a href="networks.html" class="m-menu__link ">
+                  <i class="m-menu__link-icon la la-list"></i>
+                  <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                      <span class="m-menu__link-text">
+                        Сети
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="m-menu__item">
+                <a href="salons.html" class="m-menu__link ">
+                  <i class="m-menu__link-icon la la-list"></i>
+                  <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                      <span class="m-menu__link-text">
+                        Салоны
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="m-menu__item">
+                <a href="services.html" class="m-menu__link ">
+                  <i class="m-menu__link-icon la la-list"></i>
+                  <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                      <span class="m-menu__link-text">
+                        Услуги
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="m-menu__item">
+                <a href="positions.html" class="m-menu__link ">
+                  <i class="m-menu__link-icon la la-list"></i>
+                  <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                      <span class="m-menu__link-text">
+                        Должности
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="m-menu__item">
+                <a href="employees.html" class="m-menu__link ">
+                  <i class="m-menu__link-icon la la-list"></i>
+                  <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                      <span class="m-menu__link-text">
+                        Сотрудники
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="m-menu__item">
+                <a href="widget.html" class="m-menu__link ">
+                  <i class="m-menu__link-icon la la-list"></i>
+                  <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                      <span class="m-menu__link-text">
+                        Виджет записи
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="m-menu__item">
+                <a href="schedule.html" class="m-menu__link ">
+                  <i class="m-menu__link-icon la la-list"></i>
+                  <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                      <span class="m-menu__link-text">
+                        График работы
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="m-menu__item">
+                <a href="clients.html" class="m-menu__link ">
+                  <i class="m-menu__link-icon la la-list"></i>
+                  <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                      <span class="m-menu__link-text">
+                        Клиенты
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="m-menu__item m-menu__item--active">
+                <a href="form-visit.html" class="m-menu__link ">
+                  <i class="m-menu__link-icon la la-list"></i>
+                  <span class="m-menu__link-title">
+                    <span class="m-menu__link-wrap">
+                      <span class="m-menu__link-text">
+                        Форма визита
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- END: Aside Menu -->
+        </div>
+        <!-- END: Left Aside -->
+        <div class="m-grid__item m-grid__item--fluid m-wrapper">
+          <div class="m-content">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#form-visit">Открыть форму визита</button>
+          </div>
+        </div>
+      </div>
+      <!-- end:: Body -->
+    </div>
+    <!-- end:: Page -->    
+    <!-- begin::Modal -->
+    <div class="modal fade" id="form-visit" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- head -->
+            <div class="row row-head align-items-center mb-0">
+              <div class="col-auto">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Визит #123456<span class="ml-2 mr-2">—</span>12 мая
+                </h5>
+              </div>
+              <div class="col-auto">
+                <div class="row">
+                  <div class="col-auto col-form-label">Статус клиента:</div>
+                  <div class="col-auto">
+                    <div class="btn-group" role="group" aria-label="Small button group">
+                      <button type="button" class="btn btn-primary">
+                        Записан
+                      </button>
+                      <button type="button" class="btn btn-outline-primary">
+                        Подтвердил
+                      </button>
+                      <button type="button" class="btn btn-outline-primary">
+                        Не пришел
+                      </button>
+                      <button type="button" class="btn btn-outline-primary">
+                        Пришел
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                ×
+              </span>
+            </button>
+          </div>
+          <div class="modal-body form-visit">
+            <!-- client -->
+            <div class="client mb-3">
+              <div class="row">
+                <div class="col-auto mb-2">
+                  <h4 class="m-0">Клиент</h4>
+                </div>
+                <div class="col-auto mb-2">
+                  <input type="text" class="form-control" placeholder="Имя">
+                </div>
+                <div class="col-auto mb-2">
+                  <input type="text" class="form-control" placeholder="Номер телефона" value="+7 (812) 123-45-67">
+                </div>
+                <div class="col-auto mb-2">
+                  <a class="btn btn-outline-primary" href="#">
+                    Информация
+                  </a>
+                </div>
+                <div class="col-auto badges mb-2">
+                  <span class="m-badge m-badge--info m-badge--wide">Категория 1</span>
+                  <span class="m-badge m-badge-success m-badge--wide">Категория 2</span>
+                  <span class="m-badge m-badge--danger m-badge--wide">Категория 3</span>
+                </div>
+              </div>
+              <div>Текст примечания (свойство клиента)</div>
+            </div>
+            <!-- client -->
+            <div class="client mb-3">
+              <div class="row">
+                <div class="col-auto mb-2">
+                  <h4 class="m-0">Клиент</h4>
+                </div>
+                <div class="col-auto mb-2">
+                  <input type="text" class="form-control" placeholder="Имя">
+                </div>
+                <div class="col-auto mb-2">
+                  <input type="text" class="form-control" placeholder="Номер телефона" value="+7 (812) 123-45-67">
+                </div>
+                <div class="col-auto col-auto-wide mb-2">
+                  <a class="btn btn-outline-primary btn-def m-btn m-btn--icon" href="#">
+                    <span>
+                      <i class="la la-angle-left"></i>
+                      <span>
+                        Евгений Петрович
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div>Текст примечания (свойство клиента)</div>
+            </div>
+            <!-- worker -->
+            <div class="mb-5">
+              <div class="tgl mb-1">
+                <div class="tgl-head collapsed" data-toggle="collapse" data-target="#id-001" aria-expanded="false" aria-controls="id-001">
+                  <div class="row align-items-center">
+                    <div class="col-md-7">
+                      <h6 class="m-0">Имя Фамилия сотрудника 1</h6>
+                    </div>
+                    <div class="col-md-5">
+                      <span class="mr-3">14:00 - 15:30</span>
+                      <span class="mr-3">35 000 ₽</span>
+                      <i class="la la-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <div id="id-001" class="tgl-body collapse">
+                  <div class="row row-worker mb-3 align-items-center">
+                    <div class="col-auto">
+                      <div class="row row-switch align-items-center">
+                        <div class="col-auto">Сотрудник</div>
+                        <div class="col-auto">
+                          <label class="switch-custom">
+                            <input type="checkbox" name="">
+                            <span class="switch-custom-wrap">
+                              <span class="switch-custom-text">Этот</span>
+                              <span class="switch-custom-text">Любой</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="input-group">
+                        <span class="d-flex mr-1">
+                          <span class="input-group-addon">с</span>
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">
+                                14:30
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                14:45
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                15:00
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                каждые 15 мин
+                              </a>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="d-flex mr-1">
+                          <span class="input-group-addon">до</span>
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">
+                                14:30
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                14:45
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                15:00
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                каждые 15 мин
+                              </a>
+                            </div>
+                          </div>
+                        </span>
+                        <span class="d-flex mr-1">
+                          <span class="input-group-addon">прод.</span>
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">
+                                14:30
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                14:45
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                15:00
+                              </a>
+                              <a class="dropdown-item" href="#">
+                                каждые 15 мин
+                              </a>
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-primary m-btn m-btn--icon" data-toggle="modal" data-target="#add">
+                        <span>
+                          <i class="la la-plus"></i>
+                          <span>
+                            Услуга
+                          </span>
+                        </span>
+                      </button>
+                      <button class="btn btn-outline-primary btn-move">
+                        <span>Переместить</span>
+                        <span>
+                          <i class="la la-share"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-outline-danger btn-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-expanded="false">
+                        <i class="la la-close"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="inputs-services inputs-services-head">
+                    <div class="inputs-services-group">
+                      <div class="inputs-services-label">К-во</div>
+                    </div>
+                    <div class="inputs-services-group">
+                      <div class="inputs-services-label">Цена</div>
+                    </div>
+                    <div class="inputs-services-group">
+                      <div class="inputs-services-label">Скидка</div>
+                    </div>
+                    <div class="inputs-services-group">
+                      <div class="inputs-services-label">Сумма</div>
+                    </div>
+                  </div>
+                  <div class="mt--1">
+                    <div class="tgl-btn collapsed" data-toggle="collapse" data-target="#id-002" aria-expanded="false" aria-controls="id-002">
+                      <div class="row row-service align-items-center">
+                        <div class="col-auto">
+                          <h5 class="d-flex m-0 align-items-center"><i class="la la-angle-down mr-1 mb-1"></i><span>Стрижка мужская</span></h5>
+                        </div>
+                        <div class="col-auto js-stop-propagation">
+                          <div class="d-flex">
+                            <div class="inputs-services">
+                              <div class="inputs-services-group">
+                                <div class="inputs-services-addon">К-во</div>
+                                <input class="form-control" type="text" value='1'>
+                              </div>
+                              <div class="inputs-services-group">
+                                <div class="inputs-services-addon">Цена</div>
+                                <input class="form-control" type="text" value='25 000'>
+                              </div>
+                              <div class="inputs-services-group">
+                                <div class="inputs-services-addon">Скидка</div>
+                                <input class="form-control" type="text" value='10'>
+                              </div>
+                              <div class="inputs-services-group">
+                                <div class="inputs-services-addon">Сумма</div>
+                                <input class="form-control font-weight-bold" type="text" value="22 000" readonly style="max-width: 90px; background: white">
+                              </div>
+                            </div>
+                            <button class="btn btn-outline-danger btn-icon ml-2">
+                              <i class="la la-close"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="id-002" class="tgl-wrap collapse">
+                      <div class="row">
+                        <div class="col-sm-12 col-lg-7">
+                          <table class="table table-sm table-products">
+                            <thead class="thead-light">
+                              <tr>
+                                <th>Расход товаров</th>
+                                <th>Еди&shy;ница</th>
+                                <th>К-во</th>
+                                <th>Max</th>
+                                <th>Стоим.</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Название товара 1</td>
+                                <td>шт</td>
+                                <td>
+                                  <input class="form-control" type="text" value="2">
+                                </td>
+                                <td>20</td>
+                                <td>77</td>
+                                <td>
+                                  <button class="btn btn-outline-danger btn-sm m-btn m-btn--icon m-btn--icon-only">
+                                    <i class="la la-close"></i>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Название товара 1</td>
+                                <td>шт</td>
+                                <td>
+                                  <input class="form-control" type="text" value="2">
+                                </td>
+                                <td>20</td>
+                                <td>77</td>
+                                <td>
+                                  <button class="btn btn-outline-danger btn-sm m-btn m-btn--icon m-btn--icon-only">
+                                    <i class="la la-close"></i>
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <td>Сумма</td>
+                                <td></td>
+                                <td>6</td>
+                                <td></td>
+                                <td>254</td>
+                                <td>
+                                  <button class="btn btn-outline-success btn-sm m-btn m-btn--icon m-btn--icon-only">
+                                    <i class="la la-plus"></i>
+                                  </button>
+                                </td>
+                              </tr>
+                            </tfoot>
+                          </table>
+                        </div>
+                        <div class="col-sm-12 col-lg-5">
+                          <table class="table table-sm block-input-right">
+                            <thead class="thead-light">
+                              <tr>
+                                <th></th>
+                                <th>Общая</th>
+                                <th>С салона</th>
+                                <th>С сотр.</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Скидки:</td>
+                                <td>
+                                  <div class="input-group">
+                                    <input class="form-control" type="text" value="2">
+                                    <span class="input-group-addon">%</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-group">
+                                    <input class="form-control" type="text" value="2">
+                                    <span class="input-group-addon">%</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-group">
+                                    <input class="form-control" type="text" value="2">
+                                    <span class="input-group-addon">%</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Компания:</td>
+                                <td colspan="3">
+                                  <select class="form-control m-bootstrap-select m_selectpicker">
+                                    <option>
+                                      Компания 1
+                                    </option>
+                                    <option>
+                                      Компания 2
+                                    </option>
+                                  </select>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <div class="row row-sales align-items-center">
+                <div class="col-auto mb-3"><h4 class="m-0">Продажи</h4></div>
+                <div class="col-auto mb-3">
+                  <button class="btn btn-outline-primary btn-sm m-btn m-btn--icon">
+                    <span>
+                      <i class="la la-plus"></i>
+                      <span>
+                        Товар
+                      </span>
+                    </span>
+                  </button>
+                  <button class="btn btn-outline-primary btn-sm m-btn m-btn--icon">
+                    <span>
+                      <i class="la la-plus"></i>
+                      <span>
+                        Сертификат
+                      </span>
+                    </span>
+                  </button>
+                  <button class="btn btn-outline-primary btn-sm m-btn m-btn--icon">
+                    <span>
+                      <i class="la la-plus"></i>
+                      <span>
+                        Абонемент
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="overflow-auto">
+                <table class="table table-sm table-bordered table-sales">
+                  <thead>
+                    <tr>
+                      <th>Найменование</th>
+                      <th>Продал</th>
+                      <th>К-во</th>
+                      <th>Цена</th>
+                      <th>Скидка</th>
+                      <th>Сумма</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Бренд + Название товара [ед. изм.]</td>
+                      <td>
+                        <select class="form-control m-bootstrap-select m_selectpicker" data-live-search="true">
+                          <option>
+                            Сотрудник 1
+                          </option>
+                          <option>
+                            Сотрудник 2
+                          </option>
+                        </select>
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="1">
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="800">
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="0">
+                      </td>
+                      <td class="text-center">800</td>
+                      <td>
+                        <button class="btn btn-outline-danger btn-sm m-btn m-btn--icon m-btn--icon-only">
+                          <i class="la la-close"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Бренд + Название товара [ед. изм.]</td>
+                      <td>
+                        <select class="form-control m-bootstrap-select m_selectpicker" data-live-search="true">
+                          <option>
+                            Сотрудник 1
+                          </option>
+                          <option>
+                            Сотрудник 2
+                          </option>
+                        </select>
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="1">
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="800">
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="0">
+                      </td>
+                      <td class="text-center">800</td>
+                      <td>
+                        <button class="btn btn-outline-danger btn-sm m-btn m-btn--icon m-btn--icon-only">
+                          <i class="la la-close"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Бренд + Название товара [ед. изм.]</td>
+                      <td>
+                        <select class="form-control m-bootstrap-select m_selectpicker" data-live-search="true">
+                          <option>
+                            Сотрудник 1
+                          </option>
+                          <option>
+                            Сотрудник 2
+                          </option>
+                        </select>
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="1">
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="800">
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="0">
+                      </td>
+                      <td class="text-center">800</td>
+                      <td>
+                        <button class="btn btn-outline-danger btn-sm m-btn m-btn--icon m-btn--icon-only">
+                          <i class="la la-close"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="mb-5">
+              <h4>Оплата</h4>
+              <div class="txt txt-lg mb-2">
+                <div class="row">
+                  <div class="col-auto">Сумма: 6 500 ₽</div>
+                  <div class="col-auto">Скидка: 1 500 ₽</div>
+                  <div class="col-auto font-weight-bold">К оплате: 5 000 ₽</div>
+                </div>
+              </div>
+              <div class="overflow-auto mb-3">
+                <table class="table table-sm table-pay">
+                  <tbody>
+                    <tr>
+                      <td>Компания 1: 2000р</td>
+                      <td>
+                        <input class="form-control" type="text" value="2000">
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-primary">Наличными</button>
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="0">
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-primary">Безнал.</button>
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-primary">Печатать чек</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Компания 1: 2000р</td>
+                      <td>
+                        <input class="form-control" type="text" value="2000">
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-primary">Наличными</button>
+                      </td>
+                      <td>
+                        <input class="form-control" type="text" value="0">
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-primary">Безнал.</button>
+                      </td>
+                      <td>
+                        <button class="btn btn-outline-primary">Печатать чек</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="collapse-item mb-3">
+                <a class="collapsed" data-toggle="collapse" href="#use">
+                  <span>Использовать сертификат/абонемент</span>
+                  <i class="la la-angle-down"></i>
+                </a>
+                <div id="use" class="collapse" role="tabpanel">
+                  <div class="form-number mt-2">
+                    <input class="form-control" type="text" value="Номер">
+                    <button class="btn btn-outline-primary">Сертификат</button>
+                    <button class="btn btn-outline-primary">Абонемент</button>
+                  </div>
+                </div>
+              </div>
+              <table class="table table-sm table-auto mb-5">
+                <tbody>
+                  <tr>
+                    <td>Использован сертификат №2132 на 500р</td>
+                    <td>
+                      <button class="btn btn-outline-danger btn-sm m-btn m-btn--icon m-btn--icon-only ml-2">
+                        <i class="la la-close"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Использован сертификат №2</td>
+                    <td>
+                      <button class="btn btn-outline-danger btn-sm m-btn m-btn--icon m-btn--icon-only ml-2">
+                        <i class="la la-close"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <h4>Примечание</h4>
+                <textarea id="m_autosize_1" class="form-control" rows="1"></textarea>
+              </div>
+              <div class="col-md-6 mb-3">
+                <h4>Напоминание</h4>
+                <select class="form-control m-bootstrap-select m_selectpicker" multiple>
+                  <option selected>
+                    В день визита за 1 час, не позже 11
+                  </option>
+                  <option>
+                    В день визита за 2 часа, не позже 11
+                  </option>
+                  <option>
+                    В день визита за 3 часа, не позже 11
+                  </option>
+                  <option>
+                    За 1 день в 19 часов
+                  </option>
+                  <option>
+                    За 1 день в 12 часов
+                  </option>
+                  <option>
+                    За 2 дня в 12 часов
+                  </option>
+                  <option>
+                    За 3 дня в 12 часов
+                  </option>
+                  <option>
+                    За 7 дней в 12 часов
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row row-btns">
+              <div class="col-7">
+                <button class="btn btn-success mb-1">Сохранить</button>
+                <button class="btn btn-primary mb-1">Оплатить</button>
+              </div>
+              <div class="col-5 m--align-right">
+                <button class="btn btn-secondary m-btn m-btn--icon m-btn--icon-only mb-1">
+                  <i class="la la-history"></i>
+                </button>
+                <button class="btn btn-secondary mb-1" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="add" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Добавление услуг
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                ×
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <input class="form-control" type="search" placeholder="Поиск услуг" autofocus="true">
+                </div>
+                <div class="form-group form-group-mobile">
+                  <select class="form-control m-bootstrap-select m_selectpicker">
+                    <option>
+                      Услуга 1
+                    </option>
+                    <option>
+                      Услуга 2
+                    </option>
+                  </select>
+                </div>
+                <div class="categories">
+                  <div class="categories__item">[ Все ]</div>
+                  <div class="categories__item">[ Популярные ]</div>
+                  <div class="categories__item">Парикмахерские услуги</div>
+                  <div class="categories__group">
+                    <div class="categories__item">Парикмахерские услуги</div>
+                    <div class="categories__list">
+                      <div class="categories__item">Услуги для рук</div>
+                      <div class="categories__item">Услуги для ног</div>
+                      <div class="categories__item">Покрытие ногтей</div>
+                    </div>
+                  </div>
+                  <div class="categories__item active">Косметология</div>
+                  <div class="categories__group">
+                    <div class="categories__item">Корневой уровень</div>
+                    <div class="categories__list">
+                      <div class="categories__item">Подуровень 1</div>
+                      <div class="categories__item">Подуровень 2</div>
+                      <div class="categories__item">Подуровень 3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="mb-3">
+                  <div class="txt">
+                    <div class="row">
+                      <div class="col-auto">Корневой уровень</div>
+                      <div class="col-auto ml-auto">₽</div>
+                    </div>
+                  </div>
+                  <div class="checkbox-list">
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="txt">
+                    <div class="row">
+                      <div class="col-auto">Корневой уровень</div>
+                      <div class="col-auto ml-auto">₽</div>
+                    </div>
+                  </div>
+                  <div class="checkbox-list">
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                    <label class="m-checkbox m-checkbox--state-brand m-0">
+                      <input type="checkbox">
+                      Классический маникюр <strong>500</strong>
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-auto">
+                <button type="button" class="btn btn-success">
+                  Выбрать
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                  Закрыть
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:: Modal -->    
+    <!-- begin::Scroll Top -->
+    <div class="m-scroll-top m-scroll-top--skin-top" data-toggle="m-scroll-top" data-scroll-offset="500" data-scroll-speed="300">
+      <i class="la la-arrow-up"></i>
+    </div>
+    <!-- end::Scroll Top -->
+    <!--begin::Base Scripts -->
+    <script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="assets/demo/default/base/scripts.bundle.js" type="text/javascript"></script>
+    <!--end::Base Scripts -->
+    <!--begin::Page Vendors -->
+    <script src="assets/demo/default/custom/components/forms/widgets/bootstrap-select.js" type="text/javascript"></script>
+    <script src="assets/demo/default/custom/components/forms/widgets/autosize.js" type="text/javascript"></script>
+    <script>
+      (function(){
+        // stop propagation
+        $(function(){
+          $('.js-stop-propagation').on('click mouseenter', function(e){
+            e.stopPropagation();
+          });
+        });
+        // modals
+        $(document).on('hidden.bs.modal', function (event) {
+          if ($('.modal:visible').length) {
+            $('body').addClass('modal-open');
+          }
+        });
+      }());
+    </script>
+    <!--end::Page Vendors -->
+  </body>
+  <!-- end::Body -->
+</html>

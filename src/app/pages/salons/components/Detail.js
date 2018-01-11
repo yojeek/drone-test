@@ -84,7 +84,7 @@ const Detail = ({
                       <Select
                         className={`form-control m-bootstrap-select m_selectpicker`}
                         data-live-search="true"
-                        title="Выберете сеть"
+                        title="Выберите сеть"
                         value={network}
                         onChange={({ target }) => onChangeNetwork(target.value)}
                       >

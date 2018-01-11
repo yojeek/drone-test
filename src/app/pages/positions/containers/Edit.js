@@ -20,11 +20,15 @@ class Container extends Component {
 }
 
 export default connect(
-  state => state.positions.detail,
+  state => ({
+    ...state.positions.detail,
+    networks: state.networks.list.rows,
+  }),
   (dispatch, { match }) => ({
     onLoad: () => dispatch(load(match.params.id)),
     onChangeName: value => dispatch(change('name', value)),
     onChangeDescription: value => dispatch(change('description', value)),
+    onChangeNetwork: value => dispatch(change('network', value)),
     onRemove: () => dispatch(remove()),
     onClear: () => dispatch(clear()),
     onSave: () => dispatch(update()),

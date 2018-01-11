@@ -12,6 +12,10 @@ export const load = () => async (dispatch, getState, client) => {
             id
             name
             description
+            network {
+              id
+              name
+            }
           }
         }
       }

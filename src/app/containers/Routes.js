@@ -4,6 +4,7 @@ import App from '../components/App'
 import Networks from '../pages/networks/containers/Routes'
 import Salons from '../pages/salons/containers/Routes'
 import Positions from '../pages/positions/containers/Routes'
+import Employees from '../pages/employees/containers/Routes'
 
 // <Route path='/auth' component={Auth} />
 const Routes = () => (
@@ -13,6 +14,7 @@ const Routes = () => (
         <Route path='/networks' component={Networks} />
         <Route path='/salons' component={Salons} />
         <Route path='/positions' component={Positions} />
+        <Route path='/employees' component={Employees} />
       </App>
     </Route>
   </Switch>

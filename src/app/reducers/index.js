@@ -4,6 +4,7 @@ import security from './security'
 import networks from '../pages/networks/reducers'
 import salons from '../pages/salons/reducers'
 import positions from '../pages/positions/reducers'
+import employees from '../pages/employees/reducers'
 
 export default combineReducers({
   router,
@@ -11,4 +12,5 @@ export default combineReducers({
   networks,
   salons,
   positions,
+  employees,
 })

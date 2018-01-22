@@ -59,7 +59,7 @@ const Toolbar = () => (
           </Link>
         </li>
         <li className="m-menu__item">
-          <a href="employees.html" className="m-menu__link ">
+          <Link to='/employees' className="m-menu__link ">
             <i className="m-menu__link-icon la la-list"></i>
             <span className="m-menu__link-title">
               <span className="m-menu__link-wrap">
@@ -68,7 +68,7 @@ const Toolbar = () => (
                 </span>
               </span>
             </span>
-          </a>
+          </Link>
         </li>
         <li className="m-menu__item">
           <a href="widget.html" className="m-menu__link ">

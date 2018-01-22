@@ -19,8 +19,8 @@ const Modal = ({ children }) => [
 ]
 
 const Detail = ({
-  id, name, description, errors = {},
-  onChangeName, onChangeDescription, onSave, onRemove,
+  id, name, description, network, errors = {}, networks = [],
+  onChangeName, onChangeDescription, onChangeNetwork, onSave, onRemove,
 }) => (
   <Modal>
     <div className="modal-content">
@@ -37,6 +37,24 @@ const Detail = ({
         </Link>
       </div>
       <div className="modal-body">
+        <div className="form-group row">
+          <label htmlFor="inputPassword" className="col-sm-3 col-form-label">Сеть</label>
+          <div className="col-sm-9">
+            <Select
+              className={`form-control m-bootstrap-select m_selectpicker`}
+              data-live-search="true"
+              title="Выберите сеть"
+              value={network}
+              onChange={({ target }) => onChangeNetwork(target.value)}
+            >
+              {networks.map(network => (
+                <option value={network.id} key={network.id}>
+                  {network.name}
+                </option>
+              ))}
+            </Select>
+          </div>
+        </div>
         <div className="form-group row">
           <label htmlFor="inputPassword" className="col-sm-3 col-form-label">Название</label>
           <div className="col-sm-9">

@@ -19,6 +19,10 @@ class Select extends Component {
     }
   }
 
+  componentDidUpdate() {
+    $(this.element).selectpicker('refresh')
+  }
+
   onSetRef = (element) => {
     this.element = element
   }

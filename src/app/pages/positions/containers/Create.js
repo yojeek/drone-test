@@ -16,10 +16,14 @@ class Container extends Component {
 }
 
 export default connect(
-  state => state.positions.detail,
+  state => ({
+    ...state.positions.detail,
+    networks: state.networks.list.rows,
+  }),
   dispatch => ({
     onChangeName: value => dispatch(change('name', value)),
     onChangeDescription: value => dispatch(change('description', value)),
+    onChangeNetwork: value => dispatch(change('network', value)),
     onClear: () => dispatch(clear()),
     onSave: () => dispatch(create()),
   }),

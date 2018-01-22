@@ -29,12 +29,12 @@ const List = ({ rows = [] }) => (
               </div>
               <div className="col-sm col-9">
                 <h5>
-                  <a className="m-link m--font-bolder" href="#">
+                  <Link to={`/salons?network=${row.id}`} className="m-link m--font-bolder">
                     {row.name}
-                  </a>
+                  </Link>
                 </h5>
                 <p>
-                  Салонов: 11
+                  Салонов: {row.salons.length}
                 </p>
               </div>
               <div className="col-sm col-3 m--align-right">

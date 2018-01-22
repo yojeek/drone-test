@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Select } from 'ui/select'
 
-const List = ({ rows = [] }) => (
+const List = ({ networks = [], rows = [], onChangeNetwork }) => (
   <div className="m-portlet">
     <div className="m-portlet__head">
       <div className="m-portlet__head-caption">
@@ -22,6 +22,22 @@ const List = ({ rows = [] }) => (
     </div>
     <div className="m-portlet__body">
       <div className="m-widget5">
+        <div className="m-widget5__item">
+          <Select
+            className="form-control"
+            data-live-search="true"
+            onChange={onChangeNetwork}
+          >
+            <option value="0">
+              Все сети
+            </option>
+            {networks.map(network => (
+              <option key={network.id} value={network.id}>
+                {network.name}
+              </option>
+            ))}
+          </Select>
+        </div>
         {rows.map(row => (
           <div className="m-widget5__item" key={row.id}>
             <div className="row">

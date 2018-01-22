@@ -47,21 +47,24 @@ export const load = (id) => async (dispatch, getState, client) => {
 }
 
 export const create = () => async (dispatch, getState, client, history) => {
-  const { name, description } = getState().positions.detail
+  const { name, description, network } = getState().positions.detail
 
   const { data } = await client.mutate({
     mutation: gql`
       mutation createPosition(
         $name: String!,
-        $description: String!
+        $description: String!,
+        $network: ID!
       ) {
         createPosition(
           name: $name,
-          description: $description
+          description: $description,
+          network: $network,
         ) {
           errors {
             name
             description
+            network
           }
           result {
             id
@@ -72,6 +75,7 @@ export const create = () => async (dispatch, getState, client, history) => {
     variables: {
       name,
       description,
+      network,
     },
   })
 
@@ -87,23 +91,26 @@ export const create = () => async (dispatch, getState, client, history) => {
 }
 
 export const update = () => async (dispatch, getState, client, history) => {
-  const { id, name, description } = getState().positions.detail
+  const { id, name, description, network } = getState().positions.detail
 
   const { data } = await client.mutate({
     mutation: gql`
       mutation updatePosition(
         $id: ID!,
         $name: String!,
-        $description: String!
+        $description: String!,
+        $network: ID!
       ) {
         updatePosition(
           id: $id,
           name: $name,
-          description: $description
+          description: $description,
+          network: $network,
         ) {
           errors {
             name
             description
+            network
           }
           result {
             id
@@ -115,6 +122,7 @@ export const update = () => async (dispatch, getState, client, history) => {
       id,
       name,
       description,
+      network,
     },
   })
 

@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+#monocle-container {
+    height: 100%;
+    background-image: linear-gradient(125deg, #396aab 1%, #092554);
+}
+
+.tether-element {
+    z-index: 2000;
+}

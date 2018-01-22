@@ -6,7 +6,7 @@ import Salons from '../pages/salons/containers/Routes'
 import Positions from '../pages/positions/containers/Routes'
 import Employees from '../pages/employees/containers/Routes'
 
-// <Route path='/auth' component={Auth} />
+// TODO: rewrite fine route
 const Routes = () => (
   <Switch>
     <Route path='/'>

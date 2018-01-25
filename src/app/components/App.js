@@ -1,4 +1,5 @@
 import React from 'react'
+import { Column, Row, Layout } from 'flex-layouts'
 import Header from './Header'
 import Sidebar from './Sidebar'
 
@@ -17,9 +18,11 @@ class App extends Component {
           <Header />
         </Layout>
         <Layout shrink={1} grow={1}>
-          <Column>
+          <Column fill>
             <Layout>
-              <Sidebar />
+              <Row basis='184px'>
+                <Sidebar />
+              </Row>
             </Layout>
             <Layout shrink={1} grow={1}>
               <Content>

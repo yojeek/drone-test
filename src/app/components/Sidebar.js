@@ -1,4 +1,5 @@
 import React from 'react'
+import { defineMessages, injectIntl } from 'react-intl'
 import { Column, Layout } from 'flex-layouts'
 import { MenuNavLink } from 'src/ui/link'
 
@@ -103,4 +104,4 @@ const Sidebar = ({intl}) => (
   </Column>
 )
 
-export default Sidebar
+export default injectIntl(Sidebar)

@@ -1,33 +1,29 @@
-# Avisits Users Workspace Cabinet 
+## Установка и сборка
 
-## Commands
+### Зависимости.
 
-Install dependencies
+Для сборки проекта необходимо наличие nodejs и yarn или docker. По умолчания все примеры запускаются через ```yarn```, но их можно так же запустить через docker-compose, с помощью команды ```docker-compose run yarn```.
 
-```
-docker-compose run yarn
-```
-
-Start dev server
+### Установка
 
 ```
-docker-compose up dev
+yarn install
 ```
 
-Build assets
+### Окружение для разработки
 
 ```
-docker-compose run build
-````
-
-Build image
-
-```
-docker-compose build server
+yarn run dev
 ```
 
-Start production based server
+### Сборка проекта
 
 ```
-docker-compose up server
+yarn run build
+```
+
+### Запуск линтера
+
+```
+yarn run lint
 ```

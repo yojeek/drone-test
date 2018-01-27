@@ -12,13 +12,13 @@ const styles = StyleSheet.create({
     outline: 0,
     borderWidth: '1px',
     boxSizing: 'border-box',
-    borderRadius: '3px',
+    borderRadius: '4px',
     textAlign: 'center',
     fontFamily: 'Roboto',
     fontWeight: 400,
     lineHeight: 1.25,
     fontSize: '14px',
-    transition: 'all .15s ease-in-out',
+    transition: 'all .4s ease-in-out',
   },
   fill: {
     width: '100%',
@@ -32,54 +32,38 @@ const styles = StyleSheet.create({
   },
   'color=primary': {
     color: '#ffffff',
-    background: '#384ad7',
-    borderColor: '#2e40d4',
+    background: '#ffa800',
+    borderColor: '#ffa800',
     '&:hover': {
-      background: '#384ad7',
+      boxShadow: '0px 2px 4px 0px rgba(255,168,0,1)',
     },
   },
   'color=secondary': {
-    color: '#111111',
-    background: '#ffffff',
-    borderColor: '#ebedf2',
-    '&:hover': {
-      background: '#f4f5f8',
-    },
-  },
-  'color=danger': {
     color: '#ffffff',
-    background: '#f4516c',
-    borderColor: '#f4516c',
+    background: '#8390ad',
+    borderColor: '#8390ad',
     '&:hover': {
-      background: '#f22d4e',
-      borderColor: '#f12143',
-    },
-  },
-  'color=success': {
-    color: '#ffffff',
-    background: '#34bfa3',
-    borderColor: '#34bfa3',
-    '&:hover': {
-      background: '#2ca189',
-      borderColor: '#299781',
+      boxShadow: '0px 2px 4px 0px rgba(131,144,173,1)',
     },
   },
   'color=outline-primary': {
-    color: '#5867dd',
+    color: '#8390ad',
     background: 'transparent',
-    borderColor: '#5867dd',
+    borderColor: '#ffa800',
     '&:hover': {
       color: '#ffffff',
-      background: '#5867dd',
+      background: '#ffa800',
+      boxShadow: '0px 2px 4px 0px rgba(255,168,0,1)',
     },
   },
-  'color=outline-danger': {
-    color: '#f4516c',
+  'color=outline-secondary': {
+    color: '#8390ad',
     background: 'transparent',
-    borderColor: '#f4516c',
+    borderColor: '#8390ad',
     '&:hover': {
       color: '#ffffff',
-      background: '#f4516c',
+      background: '#8390ad',
+      boxShadow: '0px 2px 4px 0px rgba(131,144,173,1)',
     },
   },
   disabled: {
@@ -87,13 +71,17 @@ const styles = StyleSheet.create({
   },
 })
 
-const Button = ({ children, fill, color = 'primary', size = 'normal', disabled, onClick }) => (
+const Button = ({children, fill, color = 'primary', size = 'normal', disabled, onClick}) => (
   <button
-    disabled={disabled}
-    className={styles({ fill, color, size })}
-    onClick={onClick}
+    disabled={ disabled }
+    className={ styles({
+      fill,
+      color,
+      size
+    }) }
+    onClick={ onClick }
   >
-    {children}
+    { children }
   </button>
 )
 

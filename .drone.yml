@@ -1,0 +1,9 @@
+pipeline:
+  dev:
+    image: node:9.3.0
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: yarn run dev
+    ports:
+      - "3030:3030"

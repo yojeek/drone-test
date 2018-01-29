@@ -3,9 +3,8 @@ import { StyleSheet } from 'elementum'
 
 const styles = StyleSheet.create({
   self: {
-    background: '#2b354f',
+    background: '#293246',
     boxShadow: '0 8px 10px 0 rgba(0, 0, 0, 0.32)',
-    borderRadius: '4px',
     overflow: 'hidden',
     display: 'flex',
     flexDirection: 'column',

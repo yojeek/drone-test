@@ -11,9 +11,9 @@ a {
     text-decoration: none;
 }
 
-#monocle-container {
+#avisits-container {
     height: 100%;
-    background-image: linear-gradient(125deg, #396aab 1%, #092554);
+    background-color: #F8F8FA;
 }
 
 .tether-element {

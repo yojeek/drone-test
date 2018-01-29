@@ -1,107 +1,45 @@
 import React from 'react'
-import { defineMessages, injectIntl } from 'react-intl'
-import { Column, Layout } from 'flex-layouts'
-import { MenuNavLink } from 'src/ui/link'
+import { Layout } from 'flex-layouts'
+import { Menu, MenuItem } from 'ui/menu'
 
-const messages = defineMessages({
-  networks: {
-    id: 'nav.networks',
-    defaultMessage: 'Сети',
-  },
-  salons: {
-    id: 'nav.salons',
-    defaultMessage: 'Салоны',
-  },
-  services: {
-    id: 'nav.services',
-    defaultMessage: 'Услуги',
-  },
-  positions: {
-    id: 'nav.positions',
-    defaultMessage: 'Должности',
-  },
-  employees: {
-    id: 'nav.employees',
-    defaultMessage: 'Сотрудники',
-  },
-  widget: {
-    id: 'nav.widget',
-    defaultMessage: 'Виджет записи',
-  },
-  schedule: {
-    id: 'nav.schedule',
-    defaultMessage: 'График работы',
-  },
-  clients: {
-    id: 'nav.clients',
-    defaultMessage: 'Клиенты',
-  },
-  visitForm: {
-    id: 'nav.visitForm',
-    defaultMessage: 'Форма визита',
-  },
-})
-
-const Sidebar = ({intl}) => (
-  <Column fill>
-    <Layout>
-      <MenuNavLink to='/networks'>
-        { intl.formatMessage(messages.networks) }
-      </MenuNavLink>
-    </Layout>
+const Sidebar = () => (
+  <Menu width={185}>
+    <MenuItem to='/networks'>
+      Сети
+    </MenuItem>
     <Layout basis='12px'/>
-    <Layout>
-      <MenuNavLink to='/salons'>
-        { intl.formatMessage(messages.salons) }
-      </MenuNavLink>
-    </Layout>
+    <MenuItem to='/salons'>
+      Салоны
+    </MenuItem>
     <Layout basis='12px'/>
-    <Layout>
-      <MenuNavLink to='/services'>
-        { intl.formatMessage(messages.services) }
-      </MenuNavLink>
-    </Layout>
+    <MenuItem to='/services'>
+      Услуги
+    </MenuItem>
     <Layout basis='12px'/>
-    <Layout>
-      <MenuNavLink to='/positions'>
-        { intl.formatMessage(messages.positions) }
-      </MenuNavLink>
-    </Layout>
+    <MenuItem to='/positions'>
+      Должности
+    </MenuItem>
     <Layout basis='12px'/>
-    <Layout>
-      <MenuNavLink to='/employees'>
-        { intl.formatMessage(messages.employees) }
-      </MenuNavLink>
-    </Layout>
+    <MenuItem to='/employees'>
+      Сотрудники
+    </MenuItem>
     <Layout basis='16px'/>
-    <Layout>
-      <Divider/>
-    </Layout>
-    <Layout basis='16px'/>
-    <Layout>
-      <MenuNavLink to='/widget'>
-        { intl.formatMessage(messages.widget) }
-      </MenuNavLink>
-    </Layout>
+    <MenuItem to='/widget'>
+      Виджет записи
+    </MenuItem>
     <Layout basis='12px'/>
-    <Layout>
-      <MenuNavLink to='/clients'>
-        { intl.formatMessage(messages.clients) }
-      </MenuNavLink>
-    </Layout>
+    <MenuItem to='/clients'>
+      График работы
+    </MenuItem>
     <Layout basis='12px'/>
-    <Layout>
-      <MenuNavLink to='/schedule'>
-        { intl.formatMessage(messages.schedule) }
-      </MenuNavLink>
-    </Layout>
+    <MenuItem to='/schedule'>
+      Клиенты
+    </MenuItem>
     <Layout basis='12px'/>
-    <Layout>
-      <MenuNavLink to='/visit-form'>
-        { intl.formatMessage(messages.visitForm) }
-      </MenuNavLink>
-    </Layout>
-  </Column>
+    <MenuItem to='/visit-form'>
+      Форма визита
+    </MenuItem>
+  </Menu>
 )
 
-export default injectIntl(Sidebar)
+export default Sidebar

@@ -41,8 +41,8 @@ export const module = {
           '@babel/plugin-proposal-decorators',
           ['elementum-tools/lib/babel/plugin', {
             alias: {
-              Monocle: 'src/app',
-              MonocleUI: 'src/ui',
+              Avisits: 'src/app',
+              AvisitsUI: 'src/ui',
             },
             extract: true,
           }],
